@@ -41,7 +41,9 @@ var dvx=2;
 var dvy=2;
 var bgm=document.getElementById("bgm");
 window.onload=function()
-{bgm.play();};
+{bgm.play();
+bgm.loop=true;
+};
 levels.lev1x=[];
 levels.lev1y=[];
 document.addEventListener("keydown",play,false);

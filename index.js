@@ -40,10 +40,10 @@ var alive=true;
 var dvx=2;
 var dvy=2;
 var bgm=document.getElementById("bgm");
-window.onload=function()
-{bgm.play();
+
+bgm.play();
 bgm.loop=true;
-};
+
 levels.lev1x=[];
 levels.lev1y=[];
 document.addEventListener("keydown",play,false);
@@ -117,7 +117,7 @@ mazex=40;
 mazey=40;
 }
                       function preload()
-                       {
+                       {bgm.play();
  foodx=360;
  foody=360;
  mazex=40;
