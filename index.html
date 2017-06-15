@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Endless Night</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <canvas id="mycanvas" height="400" width="400"></canvas>
+<img src="coin.png" id="coin" style="display:none">
+<img src="villain.png" id="villain" style="display:none">
+<img src="villain2.png" id="villain2" style="display:none">
+<img src="man.png" id="man" style="display:none"></img><br>
+<p id="coins">Coins collected :<a id="score"></a></p>
+<p id="timer">Seconds: <a id="time"></a></p>
+<ul id="levels">
+<li><button id="1" class="level">Level 1</button></li>
+<li><button id="2" disabled class="level">Level 2</button></li>
+<li><button id="3" disabled class="level">Level 3</button></li>
+<li><button id="4" disabled class="level">Level 4</button></li>
+<li><button id="5" disabled class="level">Level 5</button></li>
+<li><button id="6" disabled class="level">Level 6</button></li>
+<li><button id="7" disabled class="level">Level 7</button></li>  
+<li><button id="8" disabled class="level">Level 8</button></li>
+<li><button id="9" disabled class="level">Level 9</button></li>
+<li><button id="10" disabled class="level">Level 10</button></li>
+</ul>
+<button id="restart">Restart</button>
+<p id="commentbox"><img src="man2.png">
+Hello Sam,this is your boss!,Because you wanted a promotion..<br>
+I decided to put you through a task..It's an easy one..
+And coz ur my favourite(for sure) <br>I'll tell you some clues..
+
+1)The game has levels..level1 is plain<br>
+2)Our office cubicles are converted to a maze..find all coins within 15 seconds in each level<br>
+3)You have a bomb with you that can be used once in a level to take off all the four cubicles around you<br>
+..press B to get it..Don't worry you won't be harmed by it</br>
+4)If you can't find all the coins in a level..you fail :D..But,you can restart the level<br>
+5)There is no going back if you complete the level<br>
+6)If you get killed..Oh don't look shocked..happens,you know..you can restart the whole process<br>
+7)And yeah,you can restart the entire task anytime<br>
+8)This night will continue forever for you,until you unlock all the 10 levels and collect all the coins<br>
+9)There are amazing people out there in the maze..they might kill you though ;)<br>
+10)I hope I'll see you in the morning!..Good Luck!<br><br>
+
+Press 'P' to play<br>
+You think your boss is joking..it sounds like a lunatic blabber,but,are you gonna press P?<br>
+If you are,read the instructions once more..coz he isn't joking!
+
+</p>
+<span id="countdown" class="timer"></span>
+
+<audio id="coinsound" src="coin.wav" autostart="false">
+<audio hidden="true" autoplay loop controls>
+    <source src="bgm.wav">
+</audio>
+    <script src="index.js"></script>
+
+</body>
+</html>
