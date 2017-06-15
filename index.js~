@@ -343,7 +343,7 @@ if(level>=2)drawvillain();
 
 if(level>=4)drawvillain2();
 
-drawfood();
+
 
 if((level==1)&&(comment[1]==0))
 {

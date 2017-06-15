@@ -39,6 +39,9 @@ var villainy=360;
 var alive=true;
 var dvx=2;
 var dvy=2;
+var bgm=document.getElementById("bgm");
+window.onload=function()
+{bgm.play();};
 levels.lev1x=[];
 levels.lev1y=[];
 document.addEventListener("keydown",play,false);
